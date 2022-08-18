@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <script src="bootstrap/sweetalert.min.js"></script>
+</head>
+
+<body>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li class="dropdown1">
+            <a href="javascript:void(0)" class="dropbtn">Products</a>
+            <div class="dropdown1-content">
+                <a href="men.html">Men</a>
+                <a href="women.html">Women</a>
+                <a href="kids.html">kids</a>
+            </div>
+
+        <li class="dropdown1">
+            <a href="javascript:void(0)" class="dropbtn">Gadgets</a>
+            <div class="dropdown1-content">
+                <a href="mobile.html">Mobile</a>
+                <a href="laptops.html">Laptop</a>
+            </div>
+            <li><a href="cart.html"><i class="fa fa-shopping-cart"></i></a></li>
+        </li>
+    </ul>
+
+    <div class="header">
+        <h1>Shopping Online Market</h1>
+    </div>
+
+    <div class="card w-50 container">
+        <div class="card-body">
+            <img src="kids/1 (6).jpg" style="width:250px;" height="300px">
+            <H1 style="font-size:30px ;">Kids Jacket</H1>
+            <p>Sale:₱700 <span class="text-muted">x2</span></p>
+            <a href="#" class="btn btn-success" style="float: right;" data-bs-toggle="modal"
+                data-bs-target="#payment1">Proceed to Payment</a>
+        </div>
+    </div><br>
+
+    <div class="card w-50 container">
+        <div class="card-body">
+            <img src="men/1 (12).jpg" style="width:250px;" height="300px">
+            <H1 style="font-size:30px ;">Pants</H1>
+            <p>Sale:₱400 <span class="text-muted">x2</span></p>
+            <a href="#" class="btn btn-success" style="float: right;" data-bs-toggle="modal"
+            data-bs-target="#payment2">Proceed to Payment</a>
+        </div>
+    </div>
+
+    <div class="card w-50 container">
+        <div class="card-body">
+            <img src="women/1 (1).jpeg" style="width:300px; " height="300px">
+            <H1 style="font-size:30px ;">Casual Dress</H1>
+            <p>Sale:₱200 <span class="text-muted">x2</span></p>
+            <a href="#" class="btn btn-success" style="float: right;" data-bs-toggle="modal"
+                data-bs-target="#payment3">Proceed to Payment</a>
+        </div>
+    </div>
+
+
+    <!-- PAYMENT MODAL -->
+    <div class="modal" tabindex="-1" id="payment1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">PAYMENT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="kids/1 (6).jpg" style="width:250px;" height="300px">
+                    <H1 style="font-size:30px ;">Kids Jacket</H1>
+                    <p>Sale:₱700 <span class="text-muted">x2</span></p>
+                    <label for="">Payment</label>
+                    <select name="" id="">
+                        <option value="">COD</option>
+                        <option value="">Gcash</option>
+                        <option value="">Palawan</option>
+                    </select>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" onclick="buy1()">Buy Now</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PAYMENT MODAL 2-->
+    <div class="modal" tabindex="-1" id="payment2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">PAYMENT</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="men/1 (12).jpg" style="width:250px;" height="300px">
+                    <H1 style="font-size:30px ;">Pants</H1>
+                    <p>Sale:₱400 <span class="text-muted">x2</span></p>
+                    <label for="">Payment</label>
+                    <select name="" id="">
+                        <option value="">COD</option>
+                        <option value="">Gcash</option>
+                        <option value="">Palawan</option>
+                    </select>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger"onclick="buy1()">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- PAYMENT MODAL 3-->
+<div class="modal" tabindex="-1" id="payment3">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title fw-bold">PAYMENT</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="women/1 (1).jpeg" style="width:300px; " height="300px">
+            <H1 style="font-size:30px ;">Casual Dress</H1>
+            <p>Sale:₱200 <span class="text-muted">x2</span></p>
+            <label for="">Payment</label>
+            <select name="" id="">
+                <option value="">COD</option>
+                <option value="">Gcash</option>
+                <option value="">Palawan</option>
+            </select>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-danger" onclick="buy1()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+<script>
+    function buy1(){
+        swal("ORDER PLACED", "", "success");
+    }
+</script>
